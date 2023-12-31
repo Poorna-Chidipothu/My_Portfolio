@@ -465,7 +465,7 @@ header .logo a{
 .success ion-icon{
     color: var(--succcess-color);
     font-size: 25px;
-    /* display: none; */
+    display: none;
 }
 .success .success_msg{
     font-size: 14px;
