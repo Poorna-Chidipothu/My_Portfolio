@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Porfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/my_picture.png" type="image/x-icon">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#home"><img src="./assets/logo.png" alt=""></a>
+        </div>
+        <nav id="navbar">
+            <ul class="nav_items">
+                <div class="cls"><ion-icon name="close"></ion-icon></div>
+                <li class="nav_item"><a href="#home">Home</a></li>
+                <li class="nav_item"><a href="#about">About</a></li>
+                <li class="nav_item"><a href="#projects">Projects</a></li>
+                <li class="nav_item"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="dl_mode">
+            <ion-icon name="sunny" class="dl"></ion-icon>
+        </div>
+        <div class="menu_icon">
+            <input type="checkbox" name="menu" id="menu">
+            <label for="menu">
+                <ion-icon name="grid"></ion-icon>
+            </label>
+        </div>
+        
+        
+    </header>
+    <section id="home">
+       <div class="img_container">
+            <img src="./assets/my_picture.png" alt="">
+       </div>
+       <div class="img_info">
+            <div class="greeting">Hello! I'm <br><h2>Poorna Chandra</h2></div> <br>
+            <img  class="underline" src="assets/underline.png" alt=""> 
+            <div class="intro">Here you can find out more about me and explore my work. If you're interested in hiring me, feel free to contact me through the provided contact details.</div>
+            <div class="btn_options">
+                <a href="./assets/Resume_me.pdf" download>
+                    <button class="cv">Download CV</button>
+                </a>
+                <a href="#contact">
+                    <button class="contact_me">Contact Me</button>
+                </a>
+            </div>
+       </div>
+    </section>
+
+    <section id="about">
+        <h2 class="head2">About</h2>
+        <div class="about_container">
+            <div class="about_content">
+                I am Ch.Poorna Chandra. Iam Currently pursuing my B.tech In Vishnu Institute of Technology,Bhimavaram.I have great knowledge in Web Development,Machine Learning,Graphic Designer
+            </div>
+            <div class="image_box">
+                <img src="assets/pic2.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="head2">My Projects</h2>
+        <div class="projects_container">
+            <div class="project_box">
+                <div class="project_img" ><img src="assets/translator.jpg" alt=""></div>
+                <div class="project_about">Translator Website</div>
+            </div>
+            <div class="project_box">
+                <div class="project_img"><img src="assets/e-Learning.jpg" alt=""></div>
+                <div class="project_about">CurioLearn</div>
+            </div>
+            <div class="project_box">
+                <div class="project_img"><img src="assets/pxfuel.jpg" alt=""></div>
+                <div class="project_about">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, commodi!</div>
+            </div>
+            <div class="project_box">
+                <div class="project_img"><img src="assets/pxfuel.jpg" alt=""></div>
+                <div class="project_about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, recusandae!</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="head2">Contact</h2>
+        <div class="con_container">
+            <div class="connect">
+                <img class="arrows" src="./assets/arrow.png" alt="">
+                <div class="mail_box">
+                    <ion-icon name="mail"></ion-icon>
+                    <span>poornachidipothu@gmail.com</span>
+                </div>
+                <div class="phone_box">
+                    <ion-icon name="call"></ion-icon>
+                    <span>+91 9704105919</span>
+                </div>
+                <p>Connect me Through the Social Media</p>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/ch-poorna-chandra-45bba3250/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="https://www.instagram.com/poorna_chandra03/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
+                </div>
+            </div>
+            <div class="inp_contact">
+                <form action="" id="form_container">
+                    <div class="in_name">
+                        <input type="text" id="user_name" name="user_name" placeholder="Enter your Name">
+                    </div>
+                    <div class="in_mail">
+                        <input type="email" id="user_email" placeholder="Enter your Email">
+                    </div>
+                    <textarea name="description" id="message" cols="30" rows="7" placeholder="Your Message"></textarea>
+                    <div class="submit_btn">
+                        <button class="con_btn" type="submit">Submit</button>
+                        <div class="success"><ion-icon class="icn" name="checkmark-circle"></ion-icon><div class="success_msg"></div></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <a href="#home">
+        <div class="up">
+            <ion-icon name="arrow-up"></ion-icon>
+        </div>
+    </a>
+    <footer>
+        <img src="assets/footer.png" alt="">
+        <div class="back">Copyright © 2024 PoornaChandra made with ❤</div>
+    </footer>
+    <script src="script.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script>
+        ScrollReveal({ 
+            reset: true, 
+            distance: '60px',
+            duration: 2500,
+            delay: 100
+        });
+        
+        ScrollReveal().reveal('.img_container', { delay: 400 , origin: 'left'});
+        ScrollReveal().reveal('.img_info', { delay: 400 ,origin: 'right'});
+        ScrollReveal().reveal('.head2', { delay: 100 ,distance:'0px' ,origin: 'left'});
+        // ScrollReveal().reveal('.projects_container .project_box', {  delay: 400 ,origin: 'left',distance:'20px' ,intervel:600});
+    </script>
+</body>
+</html>
