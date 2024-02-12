@@ -1,0 +1,26 @@
+light
+
+bsckground-color : #DCBFFF
+        #ebddf7
+color :
+
+
+
+
+
+
+
+dark
+bsckground-color : #40384b
+    #333
+#40384b
+#543979
+#8400ff
+#9529fa
+#a547fd
+#a68dc4
+#d8b9ff
+#DCBFFF
+
+color : #d8b9ff
+
