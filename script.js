@@ -47,22 +47,22 @@ conForm.addEventListener('submit', function (event) {
             // alert("Sent!")
             successicn.name = 'checkmark-circle';
             successmsg.innerHTML = 'Sent Successfully...';
-            successicn.style.display = 'block';
-            successmsg.style.display = 'block';
+            successicn.style.opacity = '1';
+            successmsg.style.opacity = '1';
             setTimeout(() => {
-                successicn.style.display = 'none';
-                successmsg.style.display = 'none';
+                successicn.style.opacity = '0';
+                successmsg.style.opacity = '0';
             }, 3000);
             conForm.reset();
         }, (error) => {
             // alert("Error Occured while Sending your Message.")
             successicn.name = 'close-circle';
             successmsg.innerHTML = 'Failed to Send Message...';
-            successicn.style.display = 'block';
-            successmsg.style.display = 'block';
+            successicn.style.opacity = '1';
+            successmsg.style.opacity = '1';
             setTimeout(() => {
-                successicn.style.display = 'none';
-                successmsg.style.display = 'none';
+                successicn.style.opacity = '0';
+                successmsg.style.opacity = '0';
             }, 3000);
             console.log(error.toString());
         });
