@@ -1,3 +1,5 @@
+
+
 const UpArrow = document.querySelector('.up');
 
 window.addEventListener('scroll', () => {
@@ -65,3 +67,22 @@ conForm.addEventListener('submit', function (event) {
             console.log(error.toString());
         });
 });
+
+const menuclsToggle = document.querySelector('.toggle_icon'),
+    navMenu = document.querySelector('.navbar_small'),
+    navMenuItems = document.querySelectorAll('.navbar_small .nav_items .nav_item');
+menuclsToggle.addEventListener('click',()=>{
+    navMenu.classList.toggle('show_menu');
+    if (navMenu.classList.contains('show_menu')){
+        document.body.style.overflow = 'hidden';
+    }else{
+        document.body.style.overflow = 'scroll';
+    }
+    
+})
+
+navMenuItems.forEach(elem => elem.addEventListener('click', () => {
+                navMenu.classList.remove('show_menu');
+                document.body.style.overflow = 'scroll';
+}));
+
