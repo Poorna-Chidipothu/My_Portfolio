@@ -221,7 +221,7 @@ header .logo a {
   align-items: center;
   gap: 10px;
   flex-wrap: wrap;
-  min-height: calc(100vh - 72px);
+  height: calc(100vh - 72px);
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -517,7 +517,8 @@ header .logo a {
   height: 170px;
   width: 180px;
   object-fit: contain;
-  rotate: -5deg;
+  /* rotate: -15deg; */
+  transform: rotate(-15deg);
   /* border: 3px solid #333; */
 }
 
@@ -653,6 +654,7 @@ header .logo a {
   box-shadow: var(--box-shadow);
   pointer-events: none;
   opacity: 0;
+  z-index: 50;
 }
 
 .up:hover {
@@ -754,7 +756,7 @@ footer img {
   }
 
   #home,#about,#skills,#projects,#contact {
-    min-height: calc(100vh - 200px);
+    height: calc(100dvh - 60px);
     margin: 0 auto;
     padding: 20px;
   }
@@ -853,19 +855,13 @@ footer img {
   }
 
   footer {
-    height: 45px;
+    height: 25px;
     margin-top: 20px;
     font-size: 13px;
   }
   
   footer img {
-    height: 150%;
-    width: 100%;
     object-fit:cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -2;
   }
 
   ::-webkit-scrollbar{
@@ -877,74 +873,162 @@ footer img {
 }
 
 /* media querie for medium devics*/
-@media screen and (min-width: 375px) and (max-width: 768px) {
-    header {
-        justify-content: flex-start;
-        padding: 0 20px;
-        height: 64px;
-    }
-    header .logo {
-        margin-right: auto;
-        width: 45px;
-    }
-    .toggle_icon {
-        display: block;
-        margin-left: 7px;
-    }
+@media screen and (min-width: 375px) and (max-width: 500px) {
+  header {
+    position: sticky;
+    justify-content: flex-start;
+    padding: 0 20px;
+    height: 60px;
+  }
+  header .logo {
+    margin-right: auto;
+    width: 40px;
+  }
+  .toggle_icon {
+      display: block;
+      margin-left: 7px;
+  }
+  #navbar {
+      display: none;
+  }
     
-    #navbar {
-        display: none;
-    }
-    
-  /* header{
-        position: relative;
-        justify-content: flex-start;
-        padding: 0 20px;
-    }
-    header .logo{
-        margin-right:auto;
-    }
-    
-    .toggle_icon{
-        display: block;
-        position: relative;
-        width: 30px;
-        height: 30px;
-        margin-left: 5px;
-    }
-    .toggle_icon_menu,.toggle_icon_close{
-        font-size: 25px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        cursor: pointer;
-        transition: opacity .1s, transform .4s;
-    }
-    .toggle_icon_close{
-        opacity: 0;
-    }
-    #navbar{
-        display: none;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        width: 100%;
-        background-color: #10ff10;
-        backdrop-filter: blur(20px);
-        height: calc(100dvh - 72px);
-    }
-    .img_container{
-        width: 280px;
-        height: 280px;
-        padding: 10px;
-        border: 2px solid #333;
-    }
-    .underline{
-        top: 110px;
-        left: 60px;
-        width: 200px;
-    } */
+  #home{
+    padding: 10px;
+    height: calc(100dvh - 60px);
+  }
+
+  .underline{
+    top: 105px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+  }
+
+  .btn_options{
+    margin-top: 20px;
+  }
+  .btn_options button{
+    width: 90%;
+    padding: 15px 0px;
+    border-radius: 30px;
+    font-size: 17px;
+    margin: 9px;
+  }
+
+  #home,#about,#skills,#projects,#contact {
+    height: calc(100dvh - 60px);
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 20px;
+  }
+
+  #about h2,
+  #projects h2,
+  #contact h2 {
+    font-size: 25px;
+  }
+   
+  .about_container .about_content{
+    padding: 15px;
+  }
+  .about_container .image_box {
+    width: 330px;
+    height: 330px;
+  }
+  
+  .projects_container{
+    padding: 30px 0 ;
+    column-gap: 10px;
+    row-gap: 30px;
+  }
+  .projects_container .project_box{
+      height: 250px;
+      width: 98%;
+  }
+  .projects_container .project_box .project_content{
+      padding: 5px 19px;
+      width: 250px;
+      border-radius: 30px;
+      font-weight: 600;
+  }
+  .project_box .project_content a{
+      width: 30px;
+      height: 30px;
+      font-size: 20px;
+      padding: 5px;
+  }
+
+  .con_container .connect {
+    padding: 40px 10px 20px;
+    gap: 14px;
+  }
+
+  .connect .social{
+    gap: 15px;
+    margin-top: 25px;
+  }
+  .connect .social p{
+    margin-top: 15px;
+  }
+
+  .connect .social .social_links {
+    margin-top: 10px;
+    margin-left: 40px;
+    gap: 20px;
+  }
+
+  .connect .social .arrows{
+      top: 20%;
+      left: 47px;
+      height: 120px;
+      width: 120px;
+      transform: rotate(-7deg);
+  }
+
+  .con_container .inp_contact {
+    padding: 10px;
+  }
+
+  .con_btn {
+    margin-left: 5px;
+    width: 320px;
+  }
+
+  .success {
+    margin-left: 18px;
+    padding: 10px;
+  }
+
+  .success ion-icon {
+    font-size: 30px;
+  }
+
+  .success .success_msg {
+    display: none;
+  }
+  
+  .up {
+    right: 12px;
+    bottom: 5%;
+    padding: 8px;
+    font-size: 20px;
+    box-shadow: 0 0 50px var(--text-color);
+  }
+
+  footer {
+    height: 45px;
+    margin-top: 20px;
+    font-size: 13px;
+  }
+  
+  footer img {
+    object-fit:cover;
+  }
+
+  ::-webkit-scrollbar{
+      width: 0px;
+      height: 0px;
+  } 
 }
 
 /* media query for tablets */
