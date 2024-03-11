@@ -10,12 +10,14 @@
 }
 
 :root {
-  --background-color: #e5c1ff;
+  /* --background-color: #e5c1ff; */
+  /* --background-color: #d1eaf6;  */
+  --background-color: #c0d6ff;
   --text-color: #40384b;
   --light-text-color: #3f3946;
   --hover-color: #c16efc;
   --title-color: #a547fd;
-  --box-shadow: 0 0 50px rgba(134, 35, 255, 0.4);
+  --box-shadow: 0 0 50px rgba(35, 86, 255, 0.4);
   --succcess-color: #00b919;
   --light-dark-op: rgba(0, 0, 0, 0.1);
 }
@@ -32,12 +34,14 @@ body {
 }
 
 body.light_mode {
-  --background-color: #40384b;
-  --text-color: #d8b9ff;
+  /* --background-color: #40384b; */
+  --background-color: #0d1025;
+  /* --text-color: #d8b9ff; */
+  --text-color: #d6eafc;
   --light-text-color: #a68dc4;
   --hover-color: #764fad;
   --title-color: #d8b9ff;
-  --box-shadow: 0 0 100px rgba(217, 186, 255, 0.2);
+  --box-shadow: 0 0 100px rgba(120, 133, 255, 0.5);
   --succcess-color: #10ff10;
   --light-dark-op: rgba(255, 255, 255, 0.1);
 }
@@ -261,7 +265,10 @@ header .logo a {
 }
 
 .greeting h2 {
-  color: #8400ff;
+  /* color: #8400ff; */
+  /* color: #0483b8; */
+  /* color: #6a11de; */
+  color: #291cb2;
   font-family: "Ephesis", cursive;
   font-size: 50px;
 }
@@ -282,7 +289,8 @@ header .logo a {
   border-radius: 30px;
   background: none;
   color: var(--text-color);
-  border: 3px solid #8400ff;
+  /* border: 3px solid #8400ff; */
+  border: 3px solid #416dff;
   font-size: 15px;
   font-weight: 600;
   margin: 10px;
@@ -290,17 +298,20 @@ header .logo a {
 }
 
 .btn_options .cv {
-  background-color: #8400ff;
+  /* background-color: #8400ff; */
+  background-color: #416dff;
   border: none;
   color: #fff;
 }
 
 .btn_options .cv:hover {
-  box-shadow: 0 0 0 3px var(--background-color), 0 0 0 6px #8400ff;
+  /* box-shadow: 0 0 0 3px var(--background-color), 0 0 0 6px #8400ff; */
+  box-shadow: 0 0 0 3px var(--background-color), 0 0 0 6px #416dff;
 }
 
 .btn_options button:hover {
-  background-color: #8400ff;
+  /* background-color: #8400ff; */
+  background-color: #416dff;
   color: #fff;
 }
 
@@ -318,7 +329,7 @@ header .logo a {
 #about h2,
 #projects h2,
 #contact h2 {
-  color: #9529fa;
+  color: #291cb2;
   position: relative;
   width: fit-content;
   letter-spacing: 3px;
@@ -336,7 +347,7 @@ header .logo a {
   z-index: -1;
   height: 4px;
   border-radius: 5px;
-  background-color: #9529fa;
+  background-color: #291cb2;
 }
 
 /* #about h2:after,#projects h2:after,#contact h2:after{
@@ -489,7 +500,7 @@ header .logo a {
 .connect .mail_box ion-icon,
 .connect .phone_box ion-icon {
   font-size: 24px;
-  color: #8400ff;
+  color: #416dff;
 }
 
 .connect p {
@@ -529,7 +540,7 @@ header .logo a {
 }
 
 .connect .social .social_links ion-icon {
-  color: #7300df;
+  color: #3744ff;
   font-size: 30px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -564,7 +575,7 @@ header .logo a {
   /* color:#d8b9ff; */
   color: var(--text-color);
   font-weight: 500;
-  border: 2px solid #a68dc4;
+  border: 2px solid #698cff;
   outline: none;
   border-radius: 7px;
 }
@@ -577,7 +588,7 @@ header .logo a {
 .inp_contact input:focus,
 .inp_contact textarea:focus {
   /* border: 2px solid #a547fd; */
-  border: 2px solid #a547fd;
+  border: 2px solid #698cff;
   box-shadow: var(--box-shadow);
 }
 
@@ -599,7 +610,7 @@ header .logo a {
   /* border: 2px solid #a547fd; */
   background: transparent;
   color: #fff;
-  background-color: #8400ff;
+  background-color: #416dff;
   cursor: pointer;
   border: none;
   transition: all 0.3s ease-in-out;
@@ -607,7 +618,7 @@ header .logo a {
 
 .con_btn:hover {
   /* color: #fff; */
-  box-shadow: 0 0 0 3px var(--background-color), 0 0 0 6px #8400ff;
+  box-shadow: 0 0 0 3px var(--background-color), 0 0 0 6px #416dff;
 }
 
 .success {
@@ -647,7 +658,7 @@ header .logo a {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  background-color: #9529fa;
+  background-color: #416dff;
   color: #d8b9ff;
   transition: all 0.4s ease-in-out;
   /* box-shadow: 0 0 15px rgba(241, 241, 241, 0.2); */
@@ -851,7 +862,7 @@ footer img {
     bottom: 5%;
     padding: 5px;
     font-size: 20px;
-    box-shadow: 0 0 50px var(--text-color);
+    /* box-shadow: 0 0 50px var(--text-color); */
   }
 
   footer {
@@ -1012,7 +1023,7 @@ footer img {
     bottom: 5%;
     padding: 8px;
     font-size: 20px;
-    box-shadow: 0 0 50px var(--text-color);
+    box-shadow: var(--box-shadow)
   }
 
   footer {
@@ -1146,7 +1157,7 @@ footer img {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #a547fd;
+  background-color: #416dff;
   border: 4px solid var(--background-color);
   border-radius: 7px;
   transition: all 0.1s ease-in-out;
