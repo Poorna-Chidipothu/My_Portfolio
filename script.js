@@ -1,7 +1,10 @@
-
-
 const UpArrow = document.querySelector('.up');
 
+const skillContainer = document.querySelector('.skill_container'),
+    skillPeer = document.querySelectorAll('.skill_peer');
+
+// var skillTop =skillSection.offsetTop;
+// console.log(skillTop);
 window.addEventListener('scroll', () => {
     if (window.scrollY > 500) {
         UpArrow.style.opacity = '1';
@@ -9,6 +12,10 @@ window.addEventListener('scroll', () => {
     } else {
         UpArrow.style.opacity = '0';
         UpArrow.style.pointerEvents = 'none';
+    }
+
+    if (window.scrollY > 800){
+        skillContainer.classList.add('active');
     }
 })
 

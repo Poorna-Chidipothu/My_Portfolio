@@ -20,6 +20,7 @@
             <ul class="nav_items">
                 <li class="nav_item"><a href="#home">Home</a></li>
                 <li class="nav_item"><a href="#about">About</a></li>
+                <li class="nav_item"><a href="#skills">Skills</a></li>
                 <li class="nav_item"><a href="#projects">Projects</a></li>
                 <li class="nav_item"><a href="#contact">Contact</a></li>
             </ul>
@@ -69,6 +70,60 @@
             </div>
             <div class="image_box">
                 <img src="assets/pic2.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill_container">
+            <div class="skill_box">
+                <h3 class="skill_title">HTML</h3>
+                <div class="skill">
+                    <div class="skill_bar">
+                        <span class="skill_peer html">
+                            <span class="circle"></span>
+                        </span>
+                    </div>
+                    <span class="skill_progress">85%</span>
+                </div>
+                
+            </div>
+            <div class="skill_box">
+                <h3 class="skill_title">CSS</h3>
+                <div class="skill">
+                    <div class="skill_bar">
+                        <span class="skill_peer css">
+                            <span class="circle"></span>
+                        </span>
+                    </div>
+                    <span class="skill_progress">75%</span>
+                </div>
+                
+            </div>
+            <div class="skill_box">
+                <h3 class="skill_title">JS</h3>
+                <div class="skill">
+                    <div class="skill_bar">
+                        <span class="skill_peer js">
+                            <span class="circle"></span>
+                        </span>
+                    </div>
+                    <span class="skill_progress">50%</span>
+                </div>
+                
+            </div>
+            <div class="skill_box">
+                <h3 class="skill_title">Nodejs</h3>
+                <div class="skill">
+                    <div class="skill_bar">
+                        <span class="skill_peer nodejs">
+                            <span class="circle"></span>
+                        </span>
+                    </div>
+                    <span class="skill_progress">50%</span>
+                </div>
+                
             </div>
         </div>
     </section>
@@ -159,14 +214,19 @@
         ScrollReveal({ 
             reset: true, 
             distance: '60px',
-            duration: 2500,
+            duration: 2200,
             delay: 100
         });
         
         ScrollReveal().reveal('.img_container', { delay: 400 , distance:'30px',origin: 'left'});
         ScrollReveal().reveal('.img_info', { delay: 400 , distance:'30px',origin: 'right'});
+        ScrollReveal().reveal('.about_content', { delay: 400 , distance:'60px',origin: 'right'});
+        ScrollReveal().reveal('.image_box', { delay: 400 , distance:'60px',origin: 'left'});
         ScrollReveal().reveal('.head2', { delay: 100 ,distance:'0px' ,origin: 'left'});
-        // ScrollReveal().reveal('.projects_container .project_box', {  delay: 400 ,origin: 'left',distance:'20px' ,intervel:600});
+        ScrollReveal().reveal('.project_box', {  delay: 100 ,origin: 'top',distance:'30px', intervel:600});
+        ScrollReveal().reveal('.skill_box', { delay: 100 ,distance:'30px' ,origin: 'left', interval:600});
+        ScrollReveal().reveal('.connect', { delay: 100 ,distance:'30px' ,origin: 'top'});
+        ScrollReveal().reveal('.inp_contact', { delay: 100 ,distance:'30px' ,origin: 'top'});
     </script>
 </body>
 </html>
